@@ -26,11 +26,18 @@ Scenario: Testando se o retorno ?count=2, apresenta o deck_id correto.
     Then status 200
     And match response.deck_id == "nn1dh5abkyzc"
 
-Scenario: Testando se o retorno ?count=2, apresenta falha ao valor da carta ser 0.
+Scenario: Testando o retorno com falha da criação do decks de cartas, com o deck_id inexistente.
     Given url url_base
-    And path '/eyppf3xmx62n/draw/?count=2'
+    And path '/abcde-1-2-3-4-5-6/draw/?count=2'
+    When method get
+    Then status 404
+
+Scenario:Testando se o deck_id é do tipo string.
+    Given url url_base
+    And path '44e5cpdxi5i8/draw/?count=2'
     When method get
     Then status 200
-    And def cards = response.cards.image
-    And print cards
-    
+    And match response.deck_id == "#string"
+
+
+

@@ -22,7 +22,7 @@
       <img src="karate-logo.svg" alt="Karate"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">5</div>
+      <div id="nav-pass" class="bg-success">6</div>
       <div id="nav-fail" class="bg-danger">0</div>
     </div>
   </div>
@@ -30,7 +30,7 @@
     <div>Scenarios</div>
   </div>         
   <div id="nav-date">
-    <div>2022-11-26 04:00:19 PM</div>
+    <div>2022-11-27 10:01:43 AM</div>
   </div>        
 </div>
 
@@ -48,7 +48,10 @@
             <a href="#[4:22]"><span>[4:22]</span> <span>Testando se o retorno ?count=2, apresenta o deck_id correto.</span></a>
           </div>
           <div class="nav-item passed">
-            <a href="#[5:29]"><span>[5:29]</span> <span>Testando se o retorno ?count=2, apresenta falha ao valor da carta ser 0.</span></a>
+            <a href="#[5:29]"><span>[5:29]</span> <span>Testando o retorno com falha da criação do decks de cartas, com o deck_id inexistente.</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[6:35]"><span>[6:35]</span> <span>Testando se o deck_id é do tipo string.</span></a>
           </div>
         </div>
       </div>
@@ -74,7 +77,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>1670</span>
+              <span>ms:</span>&nbsp;<span>1703</span>
             </div>
           </div>
           <div class="step-row">
@@ -97,7 +100,7 @@
         <span>*</span>&nbsp;<span>def url_base = &#39;https://deckofcardsapi.com/api/deck&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -106,7 +109,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">16:00:15.083 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">10:01:38.476 karate.env system property was: null 
 </div>   
 
   
@@ -154,7 +157,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">1656</div>
+    <div class="time-cell passed">1689</div>
   </div>
 
    
@@ -163,7 +166,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.8">16:00:15.660 request:
+  <div class="preformatted" data-parent="0.8">10:01:39.036 request:
 1 &gt; GET https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1
 1 &gt; Host: deckofcardsapi.com
 1 &gt; Connection: Keep-Alive
@@ -171,9 +174,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:00:16.808 response time in milliseconds: 1111
+10:01:40.234 response time in milliseconds: 1137
 1 &lt; 200
-1 &lt; Date: Sat, 26 Nov 2022 19:00:36 GMT
+1 &lt; Date: Sun, 27 Nov 2022 13:02:00 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -183,12 +186,12 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Vary: Origin
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=HFeOev03RN9t4FcfqENlbCLyT1eYxwrO2q%2BWvB0q1lcfNIfWTnyrE%2BrOei%2FBGFnCrp2pZ2nUYcXwjg9YeS3AWMhkI6aGO9n7ZW9eyZZvWh1WFdIKQKXNpbPwMpQUldEIGS1WULE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=ndBi7ppaedwGijHOnvQrb5Tu0tXLbRCK1Gfo6AJOYyEtA5EJL08eei5%2BnPz%2F%2FYnJgVs0gk78Ai5RucD3meJCElfkC2nwZiz9%2FI226EXZJLT98mZAcUT3urTxHWsnb0QbGyPsRL4%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 7704de2cbd8a117c-GIG
+1 &lt; CF-RAY: 770b0e428c79267f-GIG
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
-{&quot;success&quot;:true,&quot;shuffled&quot;:true,&quot;deck_id&quot;:&quot;kn3z7n3gjnu6&quot;,&quot;remaining&quot;:52}
+{&quot;success&quot;:true,&quot;shuffled&quot;:true,&quot;deck_id&quot;:&quot;jaagyt2ev9qf&quot;,&quot;remaining&quot;:52}
 </div>   
 
   
@@ -208,7 +211,7 @@
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">9</div>
+    <div class="time-cell passed">10</div>
   </div>
 
    
@@ -237,7 +240,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>334</span>
+              <span>ms:</span>&nbsp;<span>755</span>
             </div>
           </div>
           <div class="step-row">
@@ -269,7 +272,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">16:00:16.861 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">10:01:40.308 karate.env system property was: null 
 </div>   
 
   
@@ -317,7 +320,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">332</div>
+    <div class="time-cell passed">753</div>
   </div>
 
    
@@ -326,7 +329,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.13">16:00:16.873 request:
+  <div class="preformatted" data-parent="0.13">10:01:40.327 request:
 1 &gt; GET https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=a
 1 &gt; Host: deckofcardsapi.com
 1 &gt; Connection: Keep-Alive
@@ -334,9 +337,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:00:17.198 response time in milliseconds: 324
+10:01:41.072 response time in milliseconds: 743
 1 &lt; 500
-1 &lt; Date: Sat, 26 Nov 2022 19:00:37 GMT
+1 &lt; Date: Sun, 27 Nov 2022 13:02:01 GMT
 1 &lt; Content-Type: text/html
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -345,10 +348,10 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Vary: Origin, Cookie
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=gvFlny%2BtN2rrSb5r%2Fj3bNElbulTL2ZGyuD3qkb4%2FFejzMFRLtD%2B9uBDBGWuid37u4DwB1xLGLfLkbTz0pPqYc%2Fl%2FDm%2BFRjKHEUqbQsc7CZpT1ObCve%2BfbAf53pK%2FZOlQLoq7c0E%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=aIGqiQQQrFezbAvJ%2FHVHiWsG0%2B4PJrkofrfQgLkX5TFbPH4r9dGu2cLrwTP2i4%2FDo4etH%2FxRsPfUis231fg16uZF6U%2B3LQSZXq3ntFaNX%2Bk%2FEtlkEwlq6TkC8XVF7ePzC8EAsoE%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 7704de321e0b25f1-GIG
+1 &lt; CF-RAY: 770b0e484da026a9-GIG
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
 
 &lt;!doctype html&gt;
@@ -409,7 +412,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>859</span>
+              <span>ms:</span>&nbsp;<span>754</span>
             </div>
           </div>
           <div class="step-row">
@@ -441,7 +444,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">16:00:17.219 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">10:01:41.124 karate.env system property was: null 
 </div>   
 
   
@@ -489,7 +492,7 @@
         <span>And</span>&nbsp;<span>path &#39;/nn1dh5abkyzc/draw/?count=2&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">23</div>
+    <div class="time-cell passed">21</div>
   </div>
 
    
@@ -517,7 +520,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">835</div>
+    <div class="time-cell passed">732</div>
   </div>
 
    
@@ -526,7 +529,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.19">16:00:17.255 request:
+  <div class="preformatted" data-parent="0.19">10:01:41.153 request:
 1 &gt; GET https://deckofcardsapi.com/api/deck/nn1dh5abkyzc/draw/?count=2
 1 &gt; Host: deckofcardsapi.com
 1 &gt; Connection: Keep-Alive
@@ -534,9 +537,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:00:18.078 response time in milliseconds: 822
+10:01:41.879 response time in milliseconds: 723
 1 &lt; 200
-1 &lt; Date: Sat, 26 Nov 2022 19:00:37 GMT
+1 &lt; Date: Sun, 27 Nov 2022 13:02:02 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -546,10 +549,10 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Vary: Origin
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=sF8gctJtPrf8t5VLjV9OubhGsVDDzEMhhiBGMaMWqG9E9F46Eky%2BJEbYyyIKkdgxUEuZMIWxvIjoILnkIlXkrIWGiYvU87ixn9FQeA2xrxAX0QDrLeSEsHWc5gEkl8%2FT4LJB86g%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=JRTJj6XsNftXagQjrmpb6hcVPOz8EjjZTjWzxESFU7VtkBVoQB8cojznjjXOJwivWBuhI1WhAGi8TPSbzSnPqk4o8Zso0pJFHM0n1wgGfkupFWJehtbF1kwYNZZwdEy5nxLgPlQ%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 7704de34af6e2782-GIG
+1 &lt; CF-RAY: 770b0e4d7b3625a2-GIG
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
 {&quot;cards&quot;:[],&quot;success&quot;:false,&quot;deck_id&quot;:&quot;nn1dh5abkyzc&quot;,&quot;error&quot;:&quot;Not enough cards remaining to draw 2 additional&quot;,&quot;remaining&quot;:0}
 </div>   
@@ -600,7 +603,7 @@
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>825</span>
+              <span>ms:</span>&nbsp;<span>344</span>
             </div>
           </div>
           <div class="step-row">
@@ -632,7 +635,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">16:00:18.097 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">10:01:41.914 karate.env system property was: null 
 </div>   
 
   
@@ -680,7 +683,7 @@
         <span>And</span>&nbsp;<span>path &#39;/nn1dh5abkyzc/draw/?count=2&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">0</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -708,7 +711,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">774</div>
+    <div class="time-cell passed">287</div>
   </div>
 
    
@@ -717,7 +720,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.25">16:00:18.103 request:
+  <div class="preformatted" data-parent="0.25">10:01:41.923 request:
 1 &gt; GET https://deckofcardsapi.com/api/deck/nn1dh5abkyzc/draw/?count=2
 1 &gt; Host: deckofcardsapi.com
 1 &gt; Connection: Keep-Alive
@@ -725,9 +728,9 @@
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:00:18.871 response time in milliseconds: 767
+10:01:42.205 response time in milliseconds: 280
 1 &lt; 200
-1 &lt; Date: Sat, 26 Nov 2022 19:00:38 GMT
+1 &lt; Date: Sun, 27 Nov 2022 13:02:02 GMT
 1 &lt; Content-Type: application/json
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
@@ -737,10 +740,10 @@
 1 &lt; X-Frame-Options: DENY
 1 &lt; Vary: Origin
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=NGdrPGZckOp25vPfSVVopQLQSLaa3HhoJyQP8nvyW8dtIYGlmxN9jw%2FQXFd%2BZBvZPh4VYMtA55iJKoLvD1v5upfJgpcC%2F4y%2B%2BGsadoYW2zg6D0kNyH%2BIYH7PYAKLs0y7iY27LTg%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=oM5TLrxqaytBrOVdlS1BbyqNv7nkWe2WWULX6118KINg%2FtvwFb91AOmi%2BI0BmPy3Z8ViKEDq2SsiseqYQkMUN6vbODBx4zfhon%2BeBx5QlPj80nyl5S8NCiRWgLWMKVbV2L35S%2B0%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 7704de39c96b25a4-GIG
+1 &lt; CF-RAY: 770b0e524d02258c-GIG
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
 {&quot;cards&quot;:[],&quot;success&quot;:false,&quot;deck_id&quot;:&quot;nn1dh5abkyzc&quot;,&quot;error&quot;:&quot;Not enough cards remaining to draw 2 additional&quot;,&quot;remaining&quot;:0}
 </div>   
@@ -790,7 +793,7 @@
         <span>And</span>&nbsp;<span>match response.deck_id == &quot;nn1dh5abkyzc&quot;</span>
       </div>
     </div>
-    <div class="time-cell passed">50</div>
+    <div class="time-cell passed">55</div>
   </div>
 
    
@@ -814,12 +817,12 @@
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[5:29]</span>
-                <span class="scenario-name">Testando se o retorno ?count=2, apresenta falha ao valor da carta ser 0.</span>
+                <span class="scenario-name">Testando o retorno com falha da criação do decks de cartas, com o deck_id inexistente.</span>
                 <span></span>
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>318</span>
+              <span>ms:</span>&nbsp;<span>715</span>
             </div>
           </div>
           <div class="step-row">
@@ -842,7 +845,7 @@
         <span>*</span>&nbsp;<span>def url_base = &#39;https://deckofcardsapi.com/api/deck&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">2</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -851,7 +854,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.4">16:00:18.943 karate.env system property was: null 
+  <div class="preformatted" data-parent="0.4">10:01:42.287 karate.env system property was: null 
 </div>   
 
   
@@ -896,10 +899,10 @@
       <div class="step-ref passed">31</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>path &#39;/eyppf3xmx62n/draw/?count=2&#39;</span>
+        <span>And</span>&nbsp;<span>path &#39;/abcde-1-2-3-4-5-6/draw/?count=2&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">5</div>
   </div>
 
    
@@ -927,7 +930,7 @@
         <span>When</span>&nbsp;<span>method get</span>
       </div>
     </div>
-    <div class="time-cell passed">296</div>
+    <div class="time-cell passed">709</div>
   </div>
 
    
@@ -936,32 +939,41 @@
 
   
 
-  <div class="preformatted" data-parent="0.32">16:00:18.968 request:
-1 &gt; GET https://deckofcardsapi.com/api/deck/eyppf3xmx62n/draw/?count=2
+  <div class="preformatted" data-parent="0.32">10:01:42.310 request:
+1 &gt; GET https://deckofcardsapi.com/api/deck/abcde-1-2-3-4-5-6/draw/?count=2
 1 &gt; Host: deckofcardsapi.com
 1 &gt; Connection: Keep-Alive
 1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
 1 &gt; Accept-Encoding: gzip,deflate
 
 
-16:00:19.251 response time in milliseconds: 282
-1 &lt; 200
-1 &lt; Date: Sat, 26 Nov 2022 19:00:39 GMT
-1 &lt; Content-Type: application/json
+10:01:43.008 response time in milliseconds: 697
+1 &lt; 404
+1 &lt; Date: Sun, 27 Nov 2022 13:02:03 GMT
+1 &lt; Content-Type: text/html
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
-1 &lt; Access-Control-Allow-Origin: *
 1 &lt; X-Content-Type-Options: nosniff
 1 &lt; Referrer-Policy: same-origin
 1 &lt; X-Frame-Options: DENY
 1 &lt; Vary: Origin
 1 &lt; CF-Cache-Status: DYNAMIC
-1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=e1K0QJzPEFVI77J%2FFikzcfGDMTzu8mlzVzSJyT8Fw6Qg8PeWi8IHlKlWquZh7dLxdsNNssfRkkwhdTDBbO54kpU31AkI4%2FZpvwSxOF0P%2BcmX6CgD8K5rxVoCWmxEFfIDX5ESJSM%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=HGtlUSVVu1Zzcg%2FSMBhaFY2t2BPTlsgq%2BwIayqYv%2BQi1%2B9IL6LghJb%2FY%2BmXJVgxPVh%2F8Tqe7%2FWXYCzZnVi6DpYVJqnoAcJagfDiChstzChW9QQ9LNMIJsFbVK1%2FM8wfalnOIcTc%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
 1 &lt; Server: cloudflare
-1 &lt; CF-RAY: 7704de3f18d4277e-GIG
+1 &lt; CF-RAY: 770b0e549a3d259c-GIG
 1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
-{&quot;cards&quot;:[{&quot;image&quot;:&quot;https:\/\/deckofcardsapi.com\/static\/img\/7H.png&quot;,&quot;images&quot;:{&quot;svg&quot;:&quot;https:\/\/deckofcardsapi.com\/static\/img\/7H.svg&quot;,&quot;png&quot;:&quot;https:\/\/deckofcardsapi.com\/static\/img\/7H.png&quot;},&quot;code&quot;:&quot;7H&quot;,&quot;suit&quot;:&quot;HEARTS&quot;,&quot;value&quot;:&quot;7&quot;},{&quot;image&quot;:&quot;https:\/\/deckofcardsapi.com\/static\/img\/7S.png&quot;,&quot;images&quot;:{&quot;svg&quot;:&quot;https:\/\/deckofcardsapi.com\/static\/img\/7S.svg&quot;,&quot;png&quot;:&quot;https:\/\/deckofcardsapi.com\/static\/img\/7S.png&quot;},&quot;code&quot;:&quot;7S&quot;,&quot;suit&quot;:&quot;SPADES&quot;,&quot;value&quot;:&quot;7&quot;}],&quot;success&quot;:true,&quot;deck_id&quot;:&quot;eyppf3xmx62n&quot;,&quot;remaining&quot;:16}
+
+&lt;!doctype html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;title&gt;Not Found&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Not Found&lt;/h1&gt;&lt;p&gt;The requested resource was not found on this server.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
 </div>   
 
   
@@ -976,6 +988,197 @@
   <div class="step-row">
     <div class="step-container" id="0.33">
       <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 404</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[6:35]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[6:35]</span>
+                <span class="scenario-name">Testando se o deck_id é do tipo string.</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>295</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[6:35]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[6:35]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def url_base = &#39;https://deckofcardsapi.com/api/deck&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">10:01:43.050 karate.env system property was: null 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url url_base</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>path &#39;44e5cpdxi5i8/draw/?count=2&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">287</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.38">10:01:43.063 request:
+1 &gt; GET https://deckofcardsapi.com/api/deck/44e5cpdxi5i8/draw/?count=2
+1 &gt; Host: deckofcardsapi.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/19.0.1)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+10:01:43.341 response time in milliseconds: 276
+1 &lt; 200
+1 &lt; Date: Sun, 27 Nov 2022 13:02:03 GMT
+1 &lt; Content-Type: application/json
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; Referrer-Policy: same-origin
+1 &lt; X-Frame-Options: DENY
+1 &lt; Vary: Origin
+1 &lt; CF-Cache-Status: DYNAMIC
+1 &lt; Report-To: {&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https:\/\/a.nel.cloudflare.com\/report\/v3?s=q4Wx4x0KDHlU9%2BhgHPxDXP8%2FPQO3Logf%2BWV8jvqca4cefMgy1%2FmAFrjObhDfNjqwmj22yR08sTW5gxnToFjI6LWPbEFzECAAjWfr8zYU8F17V8fao5tWckqXI74RK2rR0KFpy6s%3D&quot;}],&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; NEL: {&quot;success_fraction&quot;:0,&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800}
+1 &lt; Server: cloudflare
+1 &lt; CF-RAY: 770b0e594a2c26a4-GIG
+1 &lt; alt-svc: h3=&quot;:443&quot;; ma=86400, h3-29=&quot;:443&quot;; ma=86400
+{&quot;cards&quot;:[],&quot;success&quot;:false,&quot;deck_id&quot;:&quot;44e5cpdxi5i8&quot;,&quot;error&quot;:&quot;Not enough cards remaining to draw 2 additional&quot;,&quot;remaining&quot;:0}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
       
       <div class="step-cell passed">
         <span>Then</span>&nbsp;<span>status 200</span>
@@ -1002,39 +1205,11 @@
   
 
   <div class="step-row">
-    <div class="step-container" id="0.34">
-      <div class="step-ref passed">34</div>
+    <div class="step-container" id="0.40">
+      <div class="step-ref passed">40</div>
       
       <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>def cards = response.cards.image</span>
-      </div>
-    </div>
-    <div class="time-cell passed">16</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.35">
-      <div class="step-ref passed">35</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print cards</span>
+        <span>And</span>&nbsp;<span>match response.deck_id == &quot;#string&quot;</span>
       </div>
     </div>
     <div class="time-cell passed">3</div>
@@ -1046,8 +1221,7 @@
 
   
 
-  <div class="preformatted" data-parent="0.35">16:00:19.272 [print] null 
-</div>   
+     
 
   
 
